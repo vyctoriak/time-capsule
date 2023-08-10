@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <h1 className="text-2xl font-bold text-white w-20 h-20 bg-red-500 rounded m-10 text-center">
-      Oi
-    </h1>
+    <div className="h-screen bg-zinc-950 text-zinc-50">
+      <h1 className="text-4xl font-bold">Your time capsule</h1>
+      <h1 className="text-4xl font-bold font-alt">Your time capsule</h1>
+    </div>
   )
 }
