@@ -1,7 +1,5 @@
-// import { User } from 'lucide-react'
-// import Image from 'next/image'
-// import nlwLogo from '../assets/nlw-spacetime-logo.svg'
 import { Copyright } from '@/components/Copyright'
+import { EmptyMemories } from '@/components/EmptyMemories'
 import { Hero } from '@/components/Hero'
 import { Signin } from '@/components/Signin'
 
@@ -16,23 +14,12 @@ export default function Home() {
         <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
 
         <Signin />
-
         <Hero />
-
         <Copyright />
       </div>
 
-      {/* right */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
-        <div className="flex flex-1 items-center justify-center">
-          <p className="w-[360px] text-center leading-relaxed">
-            You have not registered any memories, start to{' '}
-            <a href="" className="underline hover:text-gray-50">
-              create now
-            </a>
-            !
-          </p>
-        </div>
+        <EmptyMemories />
       </div>
     </main>
   )
